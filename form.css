@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+    width: 30rem;
+    border: 0px solid;
+    box-shadow: -14px 13px 66px 42px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    background-color: white;
+    max-width: 1200px;
+}
+
+.box h2{
+    color: black;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.box input{
+    margin: 7px 10px;
+    height: 3vh;
+    border: 1px solid gray;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    padding: 17px 11px;
+    width: 20rem;
+}
+
+.box input:focus{
+    outline: 2px solid royalblue;
+    border: none;
+    outline-offset: 2px;
+}
+
+.box button{
+    height: 4vh;
+    padding: 5px 10px;
+    border: 0px solid gray;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: lightsalmon;
+    width: 20rem;
+    transition: 0.2s all ease-in-out;
+}
+
+.box button:hover{
+    background-color: rgb(235, 136, 97);
+    transition: 0.2s all ease-in-out;
+}
+
+@media only screen and (max-width: 490px){
+    .box{
+        width: 20rem;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .box input, .box button{
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .box{
+        width: 15rem;
+    }
+
+    .box h2{
+        font-size: 15px;
+    }
+
+    .box input, .box button{
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 250px){
+    .box{
+        width: 13rem;
+    }
+
+    .box input, .box button{
+        width: 7rem;
+    }
+}
